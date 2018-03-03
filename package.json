@@ -12,12 +12,12 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "*",
+    "express": "3.x",
     "express3-handlebars": "*",
     "mongodb": "*",
     "mongoose": "*"
   },
   "engines": {
-    "node": "*"
+    "node": "8.9.x"
   }
 }
