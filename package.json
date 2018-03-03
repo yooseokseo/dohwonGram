@@ -15,8 +15,7 @@
     "express": "*",
     "express3-handlebars": "*",
     "mongodb": "*",
-    "mongoose": "*",
-    "socket.io": "*"
+    "mongoose": "*"
   },
   "engines": {
     "node": "*"
