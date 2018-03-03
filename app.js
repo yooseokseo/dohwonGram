@@ -13,6 +13,8 @@ var index = require('./routes/index');
 // var user = require('./routes/user');
 
 var app = express();
+var server = http.Server(app);
+var io = require('socket.io')(server);
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -38,6 +40,10 @@ app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
 
-http.createServer(app).listen(app.get('port'), function(){
+io.on('connection', function(socket){
+  console.log('a user connected');
+});
+
+server.listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
