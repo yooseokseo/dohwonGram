@@ -1,10 +1,10 @@
 {
-  "name": "IntroHCI",
-  "version": "0.0.1",
-  "author": "Intro HCI Staff",
+  "name": "dohwonGram",
+  "version": "1.0.0",
+  "author": "yooseok seo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/IntroHCI/lab4"
+    "url": "https://github.com/yooseokseo/dohwonGram"
   },
   "license": "MIT",
   "private": true,
