@@ -48,10 +48,9 @@ io.on('connection', function(socket){
   createNewUser(userId);
 
 
-  //when a user is discnnected
+  //when a user is disconnected
   socket.on('disconnect', function(){
-    console.log('user disconnected');
-    //case only one user
+    console.log('user ' +socket.id +' disconnected');
     deleteCurrentUser(userId);
 
   });
